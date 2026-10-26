@@ -175,7 +175,8 @@ and the human decision boundary, so you can reproduce the pattern in your own
 environment. Keep the reasoning you have and measure whether people complete
 the job more safely. Thank you."
 
-Cue: show the session's sample-repository link and `github.com/caldova`.
+Cue: show [the public sample](https://github.com/leestott/caldova-waypoint-publish)
+and `github.com/caldova`.
 Use the direct Microsoft documentation links in VERIFICATION.md rather than
 inventing an aka.ms redirect. Preserve the template closing logo. Stop at 15:00.
 
