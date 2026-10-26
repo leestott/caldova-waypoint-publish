@@ -1,0 +1,7 @@
+*
+!Dockerfile
+!requirements.txt
+!waypoint/
+!waypoint/*.py
+!data/
+!data/seed.json

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.30/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.30",
+  "version": "1.0.0",
+  "id": "{{APP_ID}}",
+  "developer": {
+    "name": "Caldova Pharmaceuticals",
+    "websiteUrl": "{{APP_BASE_URL}}",
+    "privacyUrl": "{{APP_BASE_URL}}/privacy",
+    "termsOfUseUrl": "{{APP_BASE_URL}}/terms"
+  },
+  "name": {
+    "short": "Waypoint",
+    "full": "Waypoint invoice assurance for Caldova"
+  },
+  "description": {
+    "short": "Catch invoice anomalies before approval with contract and policy evidence.",
+    "full": "Caldova Pharmaceuticals synthetic demo. Check an invoice against its contract, inspect evidence and escalate a variance before approval. Finance pilot access and a human decision are required. Waypoint never releases payment."
+  },
+  "icons": { "outline": "outline.png", "color": "color.png" },
+  "accentColor": "#0A6BBA",
+  "bots": [
+    {
+      "botId": "{{BOT_ID}}",
+      "scopes": ["personal", "team", "groupChat", "copilot"],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": ["personal", "team", "groupChat", "copilot"],
+          "commands": [
+            {
+              "title": "Check invoice",
+              "description": "Check invoice INV-1042 against contract",
+              "type": "prompt",
+              "prompt": "Check invoice INV-1042 against contract"
+            },
+            {
+              "title": "Weekly anomalies",
+              "description": "Show anomalies this week",
+              "type": "prompt",
+              "prompt": "Show anomalies this week"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "copilotAgents": {
+    "customEngineAgents": [{ "type": "bot", "id": "{{BOT_ID}}" }]
+  },
+  "webApplicationInfo": {
+    "id": "{{BOT_ID}}",
+    "resource": "api://botid-{{BOT_ID}}"
+  },
+  "validDomains": ["{{BOT_DOMAIN}}", "token.botframework.com"]
+}

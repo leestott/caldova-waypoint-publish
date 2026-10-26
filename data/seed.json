@@ -1,0 +1,50 @@
+{
+  "classification": "Synthetic Caldova demo data only",
+  "contracts": {
+    "CAL-C-042": {
+      "supplier": "CAL-SYN-042",
+      "clause": "4.2",
+      "text": "Synthetic manufacturing service: maximum GBP 100.00 per unit. No unapproved surcharge.",
+      "unit_price_pence": 10000
+    }
+  },
+  "policy": {
+    "id": "CAL-POL-017",
+    "section": "3",
+    "text": "Any price variance requires Finance escalation before approval. The agent cannot release payment."
+  },
+  "invoices": [
+    {
+      "id": "INV-1042",
+      "contract_id": "CAL-C-042",
+      "department": "Finance",
+      "units": 100,
+      "billed_pence": 1250000,
+      "age_days": 1
+    },
+    {
+      "id": "INV-1043",
+      "contract_id": "CAL-C-042",
+      "department": "Finance",
+      "units": 80,
+      "billed_pence": 800000,
+      "age_days": 2
+    },
+    {
+      "id": "INV-1044",
+      "contract_id": "CAL-C-042",
+      "department": "Finance",
+      "units": 120,
+      "billed_pence": 1500000,
+      "age_days": 0
+    },
+    {
+      "id": "INV-1030",
+      "contract_id": "CAL-C-042",
+      "department": "Finance",
+      "units": 100,
+      "billed_pence": 1100000,
+      "age_days": 9
+    }
+  ]
+}
